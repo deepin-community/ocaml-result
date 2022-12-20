@@ -1,0 +1,2 @@
+version=3
+opts=uversionmangle=s/-rc/~rc/ https://github.com/janestreet/result/tags /.*/archive/([\d\.\-rc]+)\.tar\.gz

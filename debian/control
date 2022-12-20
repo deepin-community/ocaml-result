@@ -1,0 +1,47 @@
+Source: ocaml-result
+Section: ocaml
+Priority: optional
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Uploaders: Stéphane Glondu <glondu@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ ocaml-nox,
+ ocaml-findlib,
+ ocaml-dune (>= 2),
+ dh-ocaml
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/ocaml-team/ocaml-result
+Vcs-Git: https://salsa.debian.org/ocaml-team/ocaml-result.git
+Homepage: https://github.com/janestreet/result
+
+Package: libresult-ocaml-dev
+Provides: ${ocaml:Provides}
+Architecture: any
+Depends:
+ ocaml-findlib,
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Breaks:
+ ocaml-dune (<< 2)
+Description: compatibility Result module (dev files)
+ Projects that want to use the new result type defined in OCaml >=
+ 4.03 while staying compatible with older version of OCaml should use
+ the Result module defined in this library.
+ .
+ This package contains development files.
+
+Package: libresult-ocaml
+Provides: ${ocaml:Provides}
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: compatibility Result module (runtime files)
+ Projects that want to use the new result type defined in OCaml >=
+ 4.03 while staying compatible with older version of OCaml should use
+ the Result module defined in this library.
+ .
+ This package contains runtime files.

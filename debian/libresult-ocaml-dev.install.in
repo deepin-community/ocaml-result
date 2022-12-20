@@ -1,0 +1,8 @@
+@OCamlStdlibDir@/result/*opam*
+@OCamlStdlibDir@/result/*dune*
+@OCamlStdlibDir@/result/*.ml
+@OCamlStdlibDir@/result/*.cmi
+@OCamlStdlibDir@/result/*.cmt*
+OPT: @OCamlStdlibDir@/result/*.a
+OPT: @OCamlStdlibDir@/result/*.cmx
+OPT: @OCamlStdlibDir@/result/*.cmxa

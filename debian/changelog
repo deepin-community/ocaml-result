@@ -1,0 +1,49 @@
+ocaml-result (1.5-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 18:01:47 +0800
+
+ocaml-result (1.5-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump debhelper compat level to 13
+  * Bump Standards-Version to 4.5.0
+
+ -- Stéphane Glondu <glondu@debian.org>  Fri, 24 Jul 2020 09:50:31 +0200
+
+ocaml-result (1.4-4) unstable; urgency=high
+
+  * Tighten the dependency to ocaml-dune
+
+ -- Stéphane Glondu <glondu@debian.org>  Thu, 06 Feb 2020 07:14:50 +0100
+
+ocaml-result (1.4-3) unstable; urgency=medium
+
+  * debian/rules: do not export BUILD_PATH_PREFIX_MAP
+  * Build-depend on debhelper-compat and ocaml-dune
+  * Bump Standards-Version to 4.5.0
+  * Add Rules-Requires-Root: no
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 28 Jan 2020 09:06:38 +0100
+
+ocaml-result (1.4-2) unstable; urgency=medium
+
+  * Fix FTBFS with dune 1.11.0
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 20 Aug 2019 05:30:53 +0200
+
+ocaml-result (1.4-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update Vcs-*
+  * Bump debhelper compat level to 12
+  * Bump Standards-Version to 4.4.0
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 23 Jul 2019 10:26:11 +0200
+
+ocaml-result (1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #833353)
+
+ -- Stéphane Glondu <glondu@debian.org>  Wed, 03 Aug 2016 14:35:56 +0200
