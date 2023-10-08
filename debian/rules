@@ -1,20 +1,7 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
 
 include /usr/share/ocaml/ocamlvars.mk
 
-DESTDIR = $(CURDIR)/debian/tmp
-
 %:
-	dh $@ --with ocaml
-
-override_dh_auto_clean:
-	dune clean
-
-override_dh_auto_build:
-	dune build --verbose -p result
-
-override_dh_auto_install:
-	dune install --destdir=$(DESTDIR) --prefix=/usr --libdir=..$(OCAML_STDLIB_DIR)
-	rm -f debian/tmp/usr/doc/result/LICENSE.md
-
-override_dh_dwz:
+	dh $@ --with ocaml --buildsystem ocaml_dune
